@@ -115,7 +115,7 @@ public class PasswordGeneratorGUI extends JFrame {
 						|| numbersToggle.isSelected() || symbolsToggle.isSelected();
 				if (passwordLengthInputArea.getText().length() > 0 && (anyToggleSelected)) {
 					// create an instance of the PasswordGenerator class
-					PasswordGenerator passwordGenerator = new PasswordGenerator();
+					passwordGenerator = new PasswordGenerator();
 
 					// generate a password
 					String password = passwordGenerator.generatePassword(
